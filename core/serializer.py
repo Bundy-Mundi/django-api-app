@@ -8,4 +8,9 @@ class RoomSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Room
-        fields = ("price", "name", "address", "user")
+        fields = ("pk", "price", "name", "address", "user")
+
+class EachRoomSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Room
+        fields = ("__all__")

@@ -1,11 +1,12 @@
-from rest_framework.views import APIView
+from rest_framework.generics import ListAPIView, RetrieveAPIView
 from rest_framework.response import Response
 from rooms.models import Room
-from .serializer import RoomSerializer
+from .serializer import RoomSerializer, EachRoomSerializer
 
-class ListRoomView(APIView):
+class ListRoomView(ListAPIView):
+    queryset = Room.objects.all()
+    serializer_class = RoomSerializer
 
-    def get(self, request):
-        rooms = Room.objects.all()
-        serializer = RoomSerializer(rooms, many=True)
-        return Response(serializer.data)
+class SeeRoomView(RetrieveAPIView):
+    queryset = Room.objects.all()
+    serializer_class = EachRoomSerializer
