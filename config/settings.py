@@ -44,6 +44,8 @@ PROJECT_APPS = [
     "core.apps.CoreConfig",
     "users.apps.UsersConfig",
     "rooms.apps.RoomsConfig",
+    "charts.apps.ChartsConfig",
+    "songs.apps.SongsConfig",
 ]
 
 THIRD_PARTY_APPS = [
