@@ -1,19 +1,15 @@
 from django.contrib import admin
 from . import models
 
-@admin.register(models.ChartNames)
+@admin.register(models.YearlyChart)
 class ChartAdmin(admin.ModelAdmin):
     pass
 
-@admin.register(models.Years)
+@admin.register(models.MonthlyChart)
 class ChartAdmin(admin.ModelAdmin):
     pass
 
-@admin.register(models.Months)
-class ChartAdmin(admin.ModelAdmin):
-    pass
-
-@admin.register(models.Weeks)
+@admin.register(models.WeeklyChart)
 class ChartAdmin(admin.ModelAdmin):
     pass
 

@@ -1,15 +1,16 @@
-# Airbnb API
-
-REST & GraphQL API of the Airbnb Clone using Django REST Framework and Graphene GraphQL
+## API for billboard chart reminder
 
 ### API Actions
 
-- [X] Filter Rooms
-- [ ] Search By Coords
 - [ ] Login
 - [ ] Create Account
-- [ ] See Room
-- [ ] Add Room to Favourites
+- [ ] See Charts
+- [ ] Filter by Week, Month and Year
 - [ ] See Favs
 - [ ] See Profile
 - [ ] Edit Profile
+
+### Things To Do
+
+- [ ] Create Albums and Artists Cover Image Field
+- [ ] Create Favourite List
